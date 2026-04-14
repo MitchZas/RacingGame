@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bukk6bbl3dhif"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_p1kn4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_strog"]
+
+[node name="Car" type="Node3D" unique_id=824084282]
+
+[node name="VehicleBody3D" type="VehicleBody3D" parent="." unique_id=1613725344]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="VehicleBody3D" unique_id=1470551103]
+mesh = SubResource("BoxMesh_p1kn4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VehicleBody3D" unique_id=2089221244]
+shape = SubResource("BoxShape3D_strog")
+
+[node name="Camera3D" type="Camera3D" parent="VehicleBody3D" unique_id=624268152]
+transform = Transform3D(1, 0, 0, 0, 0.98170704, 0.19039778, 0, -0.19039778, 0.98170704, 0, 0.9781005, 2.0552936)
